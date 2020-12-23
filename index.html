@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Dashboard Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+
+    <!--header area start-->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        
+        <div class="left_area">
+            <h3>Coding <span>Fire</span></h3>
+        </div>
+
+        <div class="right_area">
+            <a href="#" class="logout_btn">Cerrar Sesion</a>
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--Mobile Navigation bar start-->
+    <div class="mobile_nav">
+        <div class="nav_bar">
+            <img src="images/profile-1.jpeg" class="mobile_profile_image" alt="">
+            <i class="fa fa-bars nav_btn"></i>
+        </div>
+        <div class="mobile_nav_items">
+            <a href="#"><i class="fas fa-desktop"></i><span>Tablero</span></a>
+            <a href="#"><i class="fas fa-cogs"></i><span>Componentes</span></a>
+            <a href="#"><i class="fas fa-table"></i><span>Tablas</span></a>
+            <a href="#"><i class="fas fa-th"></i><span>Formularios</span></a>
+            <a href="#"><i class="fas fa-info-circle"></i><span>Acerca de</span></a>
+            <a href="#"><i class="fas fa-sliders-h"></i><span>Configuraciones</span></a>
+        </div>
+    </div>
+    <!--Mobile Navigation bar end-->
+    
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="profile_info">
+            <img src="images/profile-1.jpeg" class="profile_image" alt="">
+            <h4>Alexandra</h4>
+        </div>
+        <a href="#"><i class="fas fa-desktop"></i><span>Tablero</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Componentes</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Tablas</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Formularios</span></a>
+        <a href="#"><i class="fas fa-info-circle"></i><span>Acerca de</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Configuraciones</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+        <div class="card">
+            <h2>Ciencias de la Comunicación</h2>
+            <h3>Facultad de Derecho y Humanidades</h3>
+            <p>En el programa académico de Ciencias de la Comunicación, utilizarás todas las tecnologías y desarrollarás tu sentido crítico, humanista, científico y tecnológico, para convertirte en un comunicador social innovador y emprendedor, capaz de producir, difundir y dirigir diversos discursos comunicativos de gran valor social en la empresa pública y privada.
+                La comunicación social sigue experimentando cambios disruptivos, debido a la permanente evolución de las tecnologías de la comunicación y la información, lo que nos permite ver por ejemplo: cómo los diversos mensajes comunicativos en la red se retroalimentan, crecen y se expanden diariamente.</p>
+        </div>
+
+        <div class="card">
+            <h4>¿Cómo Eres?</h4>
+            <li>Analítico y con capacidad de síntesis.</li>
+            <li>Buen comunicador de manera oral y escrita.</li>
+        </div>
+
+        <div class="card">
+            <h4>¿Què llegarás a ser?</h4>
+            <li>Productor de discursos periodísticos y audiovisuales en medios de comunicación y empresas.</li>
+            <li>Ejecutor de planes de comunicación corporativa y alternativa.</li>
+        </div>
+
+        <div class="card">
+            <h4>¿Què cargo desempeñare?</h4>
+            <li>Gestor de empresas de servicios en periodismo, publicidad, marketing, relaciones públicas, producción audiovisual e impresa.</li>
+            <li>Agregado de prensa, funcionario de organismos internacionales y del cuerpo diplomático.</li>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.nav_btn').click(function(){
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    });
+    </script>
+
+</body>
+</html>
